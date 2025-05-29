@@ -1,0 +1,16 @@
+# Ignore ZIP files
+*.zip
+
+# Node modules (if used in future)
+node_modules/
+
+# OS/Editor junk
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Build artifacts (if any)
+dist/
+build/
