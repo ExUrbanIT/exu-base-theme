@@ -14,13 +14,15 @@ function exu_base_enqueue_scripts() {
 add_action('wp_enqueue_scripts', 'exu_base_enqueue_scripts');
 
 // Theme features
-function exu_base_theme_setup() {
+function exu_tier1_theme_setup() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_theme_support('menus');
+  add_theme_support('custom-logo');
 
   register_nav_menus(array(
-    'main-menu' => __('Main Menu', 'exurban-base'),
+    'main-menu' => __('Main Menu', 'exu-tier1'),
   ));
 }
-add_action('after_setup_theme', 'exu_base_theme_setup');
+add_action('after_setup_theme', 'exu_tier1_theme_setup');
+
